@@ -201,6 +201,13 @@ ul#menu li a:hover
   z-index: 0;
   vertical-align: middle; 
   margin: -27px 0 -60px -30px;}
+  
+ .picture
+ {float: left;
+ position: relavtive;
+ z-index: 0;
+ vertical-align: middle;}
+ 
 
 #content
 { text-align: left;
