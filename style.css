@@ -224,8 +224,8 @@ ul#menu li a:hover
   margin: 0;}
 
 #content2
-{text-align: left;
-  width: 590px;
+{ text-align: left;
+  width: 570px;
   padding: 25px 0 5px 25px;
   margin: 0;}
   
@@ -238,6 +238,16 @@ ul#menu li a:hover
   margin: 0 0 6px 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
+
+#content2 ul
+  { margin: 2px 0 22px 0px;}
+  
+#content2 ul li
+  { list-style-type: none;
+    background: url(bullet.png) no-repeat;
+    margin: 0 0 6px 0; 
+    padding: 0 0 4px 25px;
+    line-height: 1.5em;}
 
 #footer
 { clear: both;
