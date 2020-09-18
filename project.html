@@ -28,39 +28,49 @@
       </div>
     </div>
     <div id="site_content">
-      <div id="sidebar_container">
-        <img class="paperclip" src="paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <h3>Latest News</h3>
-        <h4>What's the News?</h4>
-        <h5>1st November 2013</h5>
-        <p>Put your latest news item here, or anything else you would like in the sidebar!<br /><a href="#">Read more</a></p>
-        </div>
-        <img class="paperclip" src="paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-          <h3>Newsletter</h3>
-          <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
-          <form method="post" action="#" id="subscribe">
-            <p style="padding: 0 0 9px 0;"><input class="search" type="text" name="email_address" value="your email address" onclick="javascript: document.forms['subscribe'].email_address.value=''" /></p>
-            <p><input class="subscribe" name="subscribe" type="submit" value="Subscribe" /></p>
-          </form>
-        </div>
-        <img class="paperclip" src="paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-          <h3>Latest Blog</h3>
-          <h4>Website Goes Live</h4>
-          <h5>1st November 2013</h5>
-          <p>We have just launched our new website. Take a look around, we'd love to know what you think.....<br /><a href="#">read more</a></p>
-        </div>
-      </div>
       <div id="content">
-        <h1>A Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+        <h1>Prject Idea</h1>
+        <p>Overview</p>
+        <p>Raspberry PI – Feed Sensor</p>
+        <p>This project will revolve around a Raspberry PI using different types of cameras, thermal at first then move into various kinds of cameras. The camera will feed data about objects back into a web interface so the client can see the object that has been caught on the camera with further information about the object. Size and colour would be the first details that I would like to get correct other characteristics can be configured after initial testing has been completed.</p>
+        <p>The object that gets detected will all depend on what the client would like to have the camera see; it could be cars, animals, humans, or other specific items. The machine learning model would be trained for the particular requirement of the client. This would be the longest part as you would have to have to train the model to detect the specific object and then fine-tune it to what the information the client requires.</p>
+        <p>Using a Raspberry PI would make the form factor small for ease of installation of where it would be placed.</p>
+        <p>Motivation</p>
+        <p>This project would be quite useful in the commercial security world. It would be able to eliminate many security risks, setting it up to detect specific objects and then send alerts in real-time to a security watch desk. Many sensors only detect motion and not particular objects, so this project can be tailored to how it is needed.</p>
+        <p>One of the motivations of this project would be able to see just what kind of specific information you could get from an object. If it was human, obtaining information such as height, and weight all from only one picture of that person. If it was a car, what make, model and year it was.</p>
+        <p>Description</p>
+        <p>The Raspberry PI 4 Feed Sensor will be a device, that in the simplest terms, will detect objects and provide information about that object. The complexity will come from the information that is required to be provided on request from the client. This will be achieved with an AI model that has been trained to the client’s specifications.</p>
+        <p>The PI and camera will be built into its a custom housing/case to have all the hardware together. This will allow ease of transport, setup and storage. The case will be made with the elements and the environment in mind. It will need to stand up to being outside for extended periods of time.</p>
+        <p>The PI will be directly connected to the MLX90640, a model of camera designed to be connected directly into a PI device. This will allow both the camera and the PI to be housed. The camera will be interchangeable, the first build we revolve around this thermal model once we have a working product with an AI model and the whole system working we can change the type of camera to a night vision to allow an alternate mode for the user. </p>
+        <p>Using TensorFlow with Single Shot Detector(SSD) we can start to develop our MobileNetV3 and train the model to what specifications the client would like to have output. There will be a lot of user expectation management that has to be passed onto the client, as we develop the model. The big one will be clients asking for too much detail for the model to output for such a small model.</p>
+        <p>TensorFlow is the open-source platform that will be set up on the PI for the MobileNet. It has libraries that are already available to be downloaded from their website and community resources that will be available during and after the build process. With the provided library, the model will be taught right away, and there can be data about objects already to identify. As it is open-source, we don't have to worry about licensing.</p>
+        <p>SSD will be the algorithm that is used for object detection. The central part of SSD that I think will help this project is that it will only take one shot to detect multiple objects present in the image using various boxes with different sizes and aspect ratio. This will cut down on the amount of storage required for the images.</p>
+        <p>The next part we need to look at is the output of information from the model and input into a web interface so the user can see what the camera is picking up. The PI will use existing WAN capabilities, such as fixed infrastructure (NBN, ADSL2+), Wi-Fi or Mobile Data, to feed the data back through the Internet and into the website. For security purposes, a VPN could be set up to allow some overhead security, depending on the sensitivity of the data that will be feeding back.</p>
+        <p>One of the main issues we will be facing is the power requirement for the device. If the device is set up away from the primary power source, we will have to use a battery pack which would be the PiJuice Hat. This device is an uninterruptible power supply (UPS) for the Raspberry Pi. This will give it an estimated 4 hours of battery time; this can be extended with a bigger battery, the PiJuice 12000mAh. The battery will provide the PI with a much larger battery life up to 24 hours.</p>
+        <p>Features
+          <ul>
+          <li>MLX90640 far-infrared sensor array (datasheet)</li>
+            <ul>
+              <li>32x24 pixels</li>
+              <li>Field of view: 55°x35° or 110°x75°</li>
+              <li>Up to 64FPS</li>
+              <li>-40 to 300°C detection with approximately 1°C accuracy</li>
+              <li>Compatible with all models of Raspberry Pi, and with certain Arduino models</li>
+            </ul>
+          <li>Object detection / recognition</li>
+            <ul>
+              <li>Customisation of distance detection</li>
+              <li>Specific object detection depending on requirements</li>
+              <li>Real-Time feed</li>
+            </ul>
+          <li>Small form factor</li>
+          <li>Easy setup for the end-user</li>
+          <li>Battery power for portability</li>
+          </ul>
+              </p>
+        <p></p>
+        <p></p>
+        <p></p>
       </div>
     </div>
     <div id="footer">
