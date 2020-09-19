@@ -30,15 +30,15 @@
     <div id="site_content">
       <div id="content">
         <h1>Prject Idea</h1>
-        <p>Overview</p>
+        <h2>Overview</h2>
         <p>Raspberry PI – Feed Sensor</p>
-        <p>This project will revolve around a Raspberry PI using different types of cameras, thermal at first then move into various kinds of cameras. The camera will feed data about objects back into a web interface so the client can see the object that has been caught on the camera with further information about the object. Size and colour would be the first details that I would like to get correct other characteristics can be configured after initial testing has been completed.</p>
+        <p>This project will revolve around a Raspberry PI 4 8GB using different types of cameras, thermal at first then move into various kinds of cameras. The camera will feed data about objects back into a web interface so the client can see the object that has been caught on the camera with further information about the object. Size and colour would be the first details that I would like to get correct other characteristics can be configured after initial testing has been completed.</p>
         <p>The object that gets detected will all depend on what the client would like to have the camera see; it could be cars, animals, humans, or other specific items. The machine learning model would be trained for the particular requirement of the client. This would be the longest part as you would have to have to train the model to detect the specific object and then fine-tune it to what the information the client requires.</p>
         <p>Using a Raspberry PI would make the form factor small for ease of installation of where it would be placed.</p>
-        <p>Motivation</p>
+        <h2>Motivation</h2>
         <p>This project would be quite useful in the commercial security world. It would be able to eliminate many security risks, setting it up to detect specific objects and then send alerts in real-time to a security watch desk. Many sensors only detect motion and not particular objects, so this project can be tailored to how it is needed.</p>
         <p>One of the motivations of this project would be able to see just what kind of specific information you could get from an object. If it was human, obtaining information such as height, and weight all from only one picture of that person. If it was a car, what make, model and year it was.</p>
-        <p>Description</p>
+        <h2>Description</h2>
         <p>The Raspberry PI 4 Feed Sensor will be a device, that in the simplest terms, will detect objects and provide information about that object. The complexity will come from the information that is required to be provided on request from the client. This will be achieved with an AI model that has been trained to the client’s specifications.</p>
         <p>The PI and camera will be built into its a custom housing/case to have all the hardware together. This will allow ease of transport, setup and storage. The case will be made with the elements and the environment in mind. It will need to stand up to being outside for extended periods of time.</p>
         <p>The PI will be directly connected to the MLX90640, a model of camera designed to be connected directly into a PI device. This will allow both the camera and the PI to be housed. The camera will be interchangeable, the first build we revolve around this thermal model once we have a working product with an AI model and the whole system working we can change the type of camera to a night vision to allow an alternate mode for the user. </p>
@@ -68,9 +68,50 @@
           <li>Battery power for portability</li>
           </ul>
               </p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>Services</p>
+            <ul>
+              <li>Web interface – Object information displayed</li>
+            </ul>
+        <h2>Tools and Technologies</h2>
+        <p>The main items such as hardware and software are listed below.</p>
+        <p>All of these items can be sourced online. The websites have been referenced at the end of this document.</p>
+        <p>The biggest cost of this project will come from the purchase of all the hardware, an estimated cost would be $450 for all the parts not including shipping costs from the different retailers. It would be best to shop around for the first project.</p>
+        <p>Hardware</p>
+            <ul>
+              <li>Raspberry Pi 4 8GB using Raspbian</li>
+              <li>Case/Housing</li>
+              <li>MLX90640 Thermal Camera </li>
+              <li>PiJuice Hat – UPS</li>
+              <li>PiJuice 12000mAh - Battery</li>
+            </ul>
+        <p>Software</p>
+            <ul>
+              <li>TensorFlow – open-source framework (for Machine Learning)</li>
+              <li>TensorFlow Lite – for deploying TensorFlow models to the PI</li>
+              <li>Single Shot Detector – Algortihm for imagery</li>
+            </ul>
+        <p>Skills Required</p>
+            <ul>
+              <li>Linux – Debian/RedHat</li>
+              <li>Programming – Python/Java</li>
+              <li>TensorFlow - MobileNetV3</li>
+              <li>Single Shot Detector (SSD)</li>
+            </ul>
+        <p>There will be much research into AI and Machine Learning for this project as that is the biggest crux in the skill section at the moment. It will involve getting a proper understanding of how to input all the data into the model and train it to the specifications.</p>
+        <p>The research with AI will go hand in hand with the programming and learning more about Python and how it will model the AI.</p>
+        <p>Have a good understanding of Linux with either Debian or RedHat to create the backend for the website interface.. </p>
+        <h2>Outcome</h2>
+        <p>At the end of this project, we should have a device created that will be able to detect an object using thermal imagery. </p>
+        <p>The object will then be pushed to a website with tailored information that a client can the view.</p>
+        <p>This will allow let's say a security company to have these sensors set up in critical areas that they may not be able to man with people. It will work better than just a movement sensor as it will give information about the object, and it can be watched in real-time from the website.</p>
+        <p>The application of this device will come down to a client who requires security, information regarding particular objects or anything in between these purposes.</p>
+        <p>References</p>
+        <p>Raspberrypi.org, 2020. [Online]. Available: https://www.raspberrypi.org/products/raspberry-pi-4-model-b/. [Accessed: 08- Sep- 2020].</p>
+        <p>"TensorFlow", TensorFlow, 2020. [Online]. Available: https://www.tensorflow.org/. [Accessed: 16- Sep- 2020]. </p>
+        <p>"SSD: Single Shot Detector for object detection using MultiBox", Medium, 2020. [Online]. Available: https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca. [Accessed: 16- Sep- 2020]. </p>
+        <p>"MLX90640 Thermal Camera Breakout", Pi Australia, 2020. [Online]. Available: https://raspberry.piaustralia.com.au/products/mlx90640-thermal-camera-breakout#description. [Accessed: 16- Sep- 2020].</p>
+        <p>"PiJuice HAT - A Portable Power Platform For Every Raspberry Pi", Pi Supply, 2020. [Online]. Available: https://uk.pi-supply.com/products/pijuice-standard. [Accessed: 17- Sep- 2020].</p>
+        <p>"PiJuice 12000mAh Battery", Pi Supply, 2020. [Online]. Available: https://uk.pi-supply.com/products/pijuice-12000mah-battery. [Accessed: 17- Sep- 2020].</p>
       </div>
     </div>
     <div id="footer">
